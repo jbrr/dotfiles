@@ -2,26 +2,9 @@ export PATH=$HOME/bin:$PATH
 
 source ~/.aliases
 
-# export ZSH="/Users/jbrr/.oh-my-zsh"
-
 # antigen plugin manager
 source /opt/homebrew/share/antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundle autojump
-antigen bundle git
-antigen bundle httpie
-antigen bundle z
-
-antigen bundle hlissner/zsh-autopair
-antigen bundle kutsan/fast-syntax-highlighting
-antigen bundle kutsan/zsh-system-clipboard
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-apple-touchbar
-antigen bundle zsh-users/zsh-completions
-
-antigen apply
-
-# source $ZSH/oh-my-zsh.sh
+antigen init ~/.antigenrc
 
 export EDITOR="codium --wait"
 
@@ -38,7 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 # direnv
 eval "$(direnv hook $(basename $SHELL))"
 
-# Installed via homebrew
+# starship.rs
 eval "$(starship init zsh)"
 
 
