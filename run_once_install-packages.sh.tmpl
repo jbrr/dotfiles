@@ -1,6 +1,13 @@
 {{if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
+# Install Homebrew
 $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 
-brew install 
+# Install packages
+brew install awscli bat chezmoi curl exa git go jq libffi neovim nvm pyenv pyenv-virtualenv starship zsh
+brew install --cask 1password authy dash docker firefox gpg-suite-no-mail iterm2 jetbrains-toolbox karabiner-elements spotify vscodium
+
+# Set default shell
+sudo echo "$(brew --prefix)/bin/zsh" >> /etc/shells
+chsh -s $(brew --prefix)/bin/zsh
 {{- end}}
