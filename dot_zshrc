@@ -2,7 +2,7 @@ export PATH=$HOME/bin:$PATH
 
 source ~/.aliases
 
-export ZSH="/Users/jbrr/.oh-my-zsh"
+# export ZSH="/Users/jbrr/.oh-my-zsh"
 
 # antigen plugin manager
 source /opt/homebrew/share/antigen/antigen.zsh
@@ -19,7 +19,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 export EDITOR="codium --wait"
 
