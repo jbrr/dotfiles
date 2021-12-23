@@ -25,7 +25,6 @@ $git_status\
 $cmd_duration\
 $line_break\
 $python\
-$nodejs\
 $character"""
 
 [directory]
@@ -63,7 +62,3 @@ style = "yellow"
 format = "[$version]($style) "
 style = "bright-yellow"
 pyenv_version_name = true
-
-[nodejs]
-format = "[$version]($style) "
-style = "bright-green"
