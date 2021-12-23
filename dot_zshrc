@@ -17,6 +17,8 @@ antigen bundle kutsan/fast-syntax-highlighting
 antigen bundle kutsan/zsh-system-clipboard
 antigen bundle zsh-users/zsh-autosuggestions
 
+antigen apply
+
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR="codium --wait"
