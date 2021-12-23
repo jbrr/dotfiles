@@ -6,7 +6,7 @@ export ZSH="/Users/jbrr/.oh-my-zsh"
 
 source ~/.aliases
 
-plugins=(git)
+plugins=(git httpie)
 
 source $ZSH/oh-my-zsh.sh
 
