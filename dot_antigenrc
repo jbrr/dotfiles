@@ -1,0 +1,17 @@
+antigen use oh-my-zsh
+
+antigen bundles <<EOBUNDLES
+git
+httpie
+z
+autojump
+
+hlissner/zsh-autopair
+kutsan/fast-syntax-highlighting
+kutsan/zsh-system-clipboard
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-apple-touchbar
+zsh-users/zsh-completions
+EOBUNDLES
+
+antigen apply
