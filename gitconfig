@@ -1,0 +1,36 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Jeff Ruane
+	email = jeff@jbrr.dev
+	signingkey = B1F8F6FF1D06CAD3
+[github]
+	user = jbrr
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /Users/jbrr/.gitignore
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[init]
+	defaultBranch = main
+[commit]
+	template = /Users/jbrr/.stCommitMsg
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2

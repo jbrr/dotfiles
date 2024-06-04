@@ -1,0 +1,24 @@
+alias glog="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+alias gs="git status"
+alias xa="exa"
+alias xal="exa -bghla"
+
+alias aliases="$EDITOR $HOME/.aliases"
+alias zshes="$EDITOR $HOME/.zshenv $HOME/.zprofile $HOME/.zshrc"
+alias rzp="source $HOME/.zprofile"
+
+alias cat="bat"
+alias vim="nvim"
+
+# ruby
+alias bx="bundle exec"
+
+function mkcd {
+  mkdir $1
+  cd $1
+}
+
+function cs {
+  cd "$@"
+  ls
+}
