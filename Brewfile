@@ -11,6 +11,7 @@ brew git
 brew git-lfs
 brew go
 brew gnupg
+brew mrkai77/cask/loop
 brew jq
 brew nvm
 brew pinentry-mac
